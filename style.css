@@ -93,6 +93,18 @@
     font-family: 'dancing script', cursive;    
 }
 
+
+@media screen and (max-width: 420px) {
+    .jumbotron h1{
+        font-size: 1.8em;
+    }
+
+    .jumbotron p{
+        font-size: .8em;
+    }
+
+}
+
 .center{
     display:flex;
     justify-content: center;
