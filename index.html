@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy Food App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+</head>
+<body>
+  <header class="headerContainer">
+    <div style="font-family: 'dancing script', cursive;" class="logo"><a href="">Foodie</a></div>
+    <nav>
+      <a href="#">Services</a>
+      <a href="#">Videos</a>
+      <a href="#">Blog</a>
+      <a href="#">Contact Us</a>
+    </nav>
+  </header>
+  <div class="jumbotron">
+        <h1 class="display-4 center">Healthy <span class="headerText"> Food Tip </span> For All!</h1>
+        <p class="lead text-center">
+          Find hundreds of amazing recipes, explore much more tasty creations at the click of a button.</p>
+        <hr class="my-4">
+       
+        <btn class="btn-learn btn-warning btn-lg" id="foodList">Get Random Recipe</btn>
+      </div>
+
+      <div class="card container" style="margin-top:-80px; margin-left: auto;">
+        <div class="card-body">
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <button type="button" class="btn btn-warning">Filter</button>
+              <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="sr-only">Toggle Dropdown</span>
+              </button>
+              <div class="dropdown-menu">
+
+
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option4" checked>
+                      <label class="form-check-label" for="exampleRadios2">
+                        Balanced
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+                      <label class="form-check-label" for="exampleRadios1">
+                        High Cab
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                      <label class="form-check-label" for="exampleRadios2">
+                        Low Cab 
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                      <label class="form-check-label" for="exampleRadios1">
+                        High Fat
+                      </label>
+                    </div>
+                    <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                    <label class="form-check-label" for="exampleRadios1">
+                      Low Fat
+                    </label>
+                  </div>
+                   
+                <div role="separator" class="dropdown-divider"></div>
+                <div class="custom-control custom-switch">
+                  <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                  <label class="custom-control-label" for="customSwitch1">Food Search</label>
+                </div>
+              </div>
+            </div>
+       
+            
+            <input type="text" class="form-control" id="searchInput" placeholder="type rice..." aria-label="Text input with segmented dropdown button">
+            <div class="input-group-append">
+              <button class="btn btn-warning" type="button" id="searchBtn">Search</button>
+            </div>
+          </div>
+               
+        </div>
+      </div>
+
+        <form class="ranger">
+          <div class="form-group">
+            <label for="formControlRange">Nutrient quantity</label>
+            <input type="range" class="form-control-range" id="formControlRange">
+            <p>100%</p>
+          </div>
+
+          <div class="form-group">
+            <label for="formControlRange">Calorie quantity</label>
+            <input type="range" class="form-control-range" id="formControlRange">
+            <p>100%</p>
+          </div>
+        </form>
+     
+
+
+    
+
+        <div class="card-group" id="container" >
+          <div class="cardi card" id="cardi" style="width: 18rem;">
+            <div class="card-img-top"></div>
+            <div class="card-body">
+              <h5 class="card-title" id="cardTitle"></h5>
+              <p class="card-text" id="cardText"></p>
+            </div>
+
+            <p class="card-text" id="dietLabel"></p>
+
+           
+            <!-- <div class="card-body">
+              <button class="btn btn-warning">Detail View</button>
+            </div> -->
+          </div>
+
+         
+        </div>
+
+        <nav id="nextPage" aria-label="Page navigation example">
+          <ul id="pagination" class="pagination">
+            <li id="link" style="font-family:'dancing script'; font-weight: bold; margin-bottom: 20px;" class="page-item page-link">Next Page <i class="fa fa-arrow-right" aria-hidden="true"></i>
+            </li>
+          </ul>
+        </nav>
+
+ 
+
+<footer>
+    <p>Foodie created by Matthew O.</p>
+</footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>

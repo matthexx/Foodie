@@ -1,0 +1,220 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Themes */
+.night1{
+    
+}
+
+.logo a{
+    font-size: 1.4em;
+    font-weight: bold;
+    color: rgb(220, 181, 24);
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+.sr-only{
+    color:black !important;
+    background:rgb(220, 181, 24) !important ;
+}
+
+.logo a:hover {
+    font-size: 1.4em;
+    font-weight: 900;
+    color: rgb(220, 181, 24);
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+
+.headerContainer{
+    display: flex;
+    flex-direction: rows;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+nav a{
+    color:black;
+    margin: 10px;
+    font-family: 'dancing script', cursive;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+#link{
+    cursor: pointer;
+}
+
+#nextPage{
+    float: right;
+    margin: 40px;
+    display: none;
+}
+
+#foodList{
+    cursor: pointer;
+}
+
+.btn-learn{
+    margin-bottom:30px;
+}
+
+.headerText{
+    color: rgb(220, 181, 24);
+    margin: 0 20px;
+}
+.jumbotron{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image:
+    /* linear-gradient(to right, rgba(245, 246, 252, 0.52), rgba(25, 2, 69, 0.73)), */
+    url("https://www.tasteaholics.com/wp-content/uploads/2016/03/food-salad-healthy-vegetables-2-min.jpg");
+    background-size: cover;
+   
+}
+.jumbotron h1{
+    font-weight: bold;
+    color: #fff;
+    font-family: 'dancing script', cursive;    
+}
+
+.center{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.imgStyle{
+    width: 150px;
+    margin-top:20px;
+    border-radius: 50%;
+    box-shadow: 10px 4px 4px rgb(107, 26, 148);  
+    
+}
+
+
+#container{
+    background-color: rgb(150, 43, 203) !important;
+    /* display: none; */
+
+
+}
+
+.liStyle{
+    list-style: none;
+    font-size:12px;
+    text-align:center;
+}
+
+.card{
+    background-color: rgb(150, 43, 203) !important;
+}
+
+
+
+#cardi{
+    /* display:none; */
+    margin:20px;
+    background-color: rgb(150, 43, 203) !important;
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 4px;
+    color: #fff;
+}
+.cardi{
+    /* display: none; */
+}
+
+.foodStyle{
+   border:2px solid #fff;
+   border-radius:6px;
+   text-align: center;
+}
+
+
+
+footer{
+    position: fixed;
+    bottom: 0;
+    display:flex;
+    justify-content: center;
+    background-color: rgb(150, 43, 203) !important;
+    width: 100%;
+    color: #fff;
+   
+
+}
+
+footer p{
+    text-align: center;
+    padding: 8px;
+}
+
+.form-check{
+    margin: 4px;
+}
+
+.spFilter{
+    background-color:rgb(220, 181, 24) !important;
+    color:#000 !important; 
+    margin-bottom: -10px;
+}
+.spFilter:hover{
+    background-color:#000 !important; 
+    color:rgb(220, 181, 24) !important;
+
+}
+
+.custom-control{
+    margin:10px;
+}
+
+.ranger{
+    text-align: center;
+    margin:0 auto;
+    width: 50%;
+    color:rgb(150, 43, 203) !important;
+    font-family: 'dancing script', cursive;
+    font-weight: bold;
+    padding: 20px;
+    display: none;
+    
+}
+
+.btnStyle{
+    color:#000 !important; 
+    background-color:rgb(220, 181, 24) !important;
+    border-radius: 4px;
+    text-align: center;
+    border: none;
+    padding: 8px;
+    margin-bottom: 20px;
+}
+
+.btnStyle:hover{
+    background-color:rgb(255, 255, 255) !important; 
+    color:rgb(145, 120, 22) !important;
+    border-radius: 4px;
+}
+
+.rangerStyle{
+  display:grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  padding: 40px;
+  gap: 20px;
+  width: 60%;
+  margin-bottom: 20px;
+
+}
