@@ -2,7 +2,6 @@ const id = 'ed40e7f3'
 const key = '160d99d7c350e79cf4202ed6fe683dcb'
 let mainContainer = document.getElementById('cardi')
 
-
 paginate=()=>{
     let rhtarw = '&#xf17b;'
     fetch(`https://api.edamam.com/api/food-database/v2/parser?nutrition-type=logging&ingr=red%20apple&app_id=49a2cc2f&app_key=1c38e8afd42d9fc79051dd17dc5b2eaa`)
@@ -48,15 +47,6 @@ mainoutput=(qUrl)=>{
         cal.style.fontSize = "10px"
         cal.style.textAlign = "center"
         cal.textContent = `${val.recipe.calories} calories per 100g`
-
-        // let ingLine = document.createElement('p')
-        // ingLine.classList.add('card-text')
-        // ingLine.style.fontSize = "14px"
-        // ingLine.style.textAlign = "center"
-        // ingLine.style.maxWidth = "80%"
-        // ingLine.style.marginLeft = "10%"
-        // ingLine.style.marginBottom = "18px"
-        // ingLine.textContent = `${val.recipe.ingredientLines}.`
 
         let ingLine = document.createElement('p')
 
@@ -173,6 +163,13 @@ mainoutput(randomRecipeUrl)
 //search for food recipe
 let searchInput = document.getElementById('searchInput')
 
+searchInput.addEventListener('keyup', (e)=>{
+    if(e.keyCode === 13 && searchInput.value != ''){
+        const searchUrl =  `https://api.edamam.com/search?q=${searchInput.value}&app_id=${id}&app_key=${key}&from=0&to=20&calories=591-722&health=alcohol-free`
+        mainoutput(searchUrl)
+    }
+})
+
 document.getElementById('searchBtn').addEventListener('click', findRecipe=()=>{
     if(searchInput.value != ''){
     const searchUrl =  `https://api.edamam.com/search?q=${searchInput.value}&app_id=${id}&app_key=${key}&from=0&to=20&calories=591-722&health=alcohol-free`
@@ -199,6 +196,7 @@ showRanger=()=>{
     })
 }
 showRanger()
+
 
 
 
