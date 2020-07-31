@@ -294,7 +294,8 @@ footer p{
 
 .closemodal:hover, #closemodal:focus{
     cursor: pointer;
-    color:black;
+    color:#fff;
+    background-color: rgb(155, 3, 3);
     text-decoration: none;
  
 }

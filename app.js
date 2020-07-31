@@ -181,9 +181,6 @@ paginate()
 
 
 
-    
-
-
 //get random recipe onclick
 document.getElementById('foodList').addEventListener('click', getFood=()=>{
     const food = [
