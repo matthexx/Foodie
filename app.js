@@ -43,7 +43,7 @@ const food = [
 
 ]
 newFood = food[Math.floor(Math.random() * food.length)];    
-const randomRecipeUrl =  `https://api.edamam.com/search?q=${newFood}&app_id=${id}&app_key=${key}&from=0&to=20&calories=591-722&health=alcohol-free`
+const randomRecipeUrl =  `https://api.edamam.com/search?q=${newFood}&app_id=${id}&app_key=${key}&from=0&to=21&calories=591-722&health=alcohol-free`
     
 //Fetch Random Recipe on page load
 mainoutput=(qUrl)=>{
@@ -227,7 +227,7 @@ let searchInput = document.getElementById('searchInput')
 
 searchInput.addEventListener('keyup', (e)=>{
     if(e.keyCode === 13 && searchInput.value != ''){
-        const searchUrl =  `https://api.edamam.com/search?q=${searchInput.value}&app_id=${id}&app_key=${key}&from=0&to=20&calories=591-722&health=alcohol-free`
+        const searchUrl =  `https://api.edamam.com/search?q=${searchInput.value}&app_id=${id}&app_key=${key}&from=0&to=21&calories=591-722&health=alcohol-free`
         mainoutput(searchUrl)
         searchInput.value = ''
     }
@@ -242,7 +242,7 @@ searchInput.addEventListener('keyup', (e)=>{
 
 document.getElementById('searchBtn').addEventListener('click', findRecipe=()=>{
     if(searchInput.value != ''){
-    const searchUrl =  `https://api.edamam.com/search?q=${searchInput.value}&app_id=${id}&app_key=${key}&from=0&to=20&calories=591-722&health=alcohol-free`
+    const searchUrl =  `https://api.edamam.com/search?q=${searchInput.value}&app_id=${id}&app_key=${key}&from=0&to=21&calories=591-722&health=alcohol-free`
     mainoutput(searchUrl)
     }
 
