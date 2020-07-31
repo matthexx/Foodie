@@ -130,6 +130,7 @@
 #container{
     background-color: rgb(150, 43, 203) !important;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     /* display: none; */
 
@@ -149,17 +150,22 @@
 
 
 #cardi{
-    /* display:none; */
     margin:20px;
     background-color: rgb(150, 43, 203) !important;
     display: grid !important;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 4px;
+    grid-auto-rows: minmax(125px, auto);
+    grid-gap: .5rem;
     color: #fff;
+    
 }
-.cardi{
-    /* display: none; */
-}
+
+@media screen and (min-width: 40em) {
+    #cardi{
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 2px;
+    }
+  }
+
 
 .foodStyle{
    border:2px solid #fff;
