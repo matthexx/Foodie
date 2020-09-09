@@ -43,8 +43,6 @@
         <h1 class="display-4 center">Healthy <span class="headerText"> Food Tip </span> For All!</h1>
         <p class="lead text-center">
           Find hundreds of amazing recipes, explore much more tasty creations at the click of a button.</p>
-        <hr class="my-4">
-       
         <btn class="btn-learn btn-warning btn-lg" id="foodList">Get Random Recipe</btn>
       </div>
 
@@ -108,13 +106,28 @@
         </div>
       </div>
 
-        <form class="ranger">
-          <div class="form-group">
-            <label for="formControlRange">Nutrient quantity</label>
-            <input type="range" class="form-control-range" id="formControlRange">
-            <p>100%</p>
-          </div>
+      <div class="mealType">
+        <div class="form-meal-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="Balanced" value="option1" checked>
+          <label class="form-check-label" for="Balanced">
+            Breakfast
+          </label>
+        </div>
+        <div class="form-meal-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="HighCab" value="option2">
+          <label class="form-check-label" for="HighCab">
+            Launch
+          </label>
+        </div>
+        <div class="form-meal-check">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="LowCab" value="option3">
+          <label class="form-check-label" for="LowCab">
+            Dinner 
+          </label>
+        </div>
+      </div>
 
+        <form class="ranger">
           <div class="form-group">
             <label for="formControlRange">Calorie quantity</label>
             <input type="range" class="form-control-range" id="formControlRange">
@@ -127,19 +140,17 @@
     
 
         <div class="card-group" id="container" >
+                
+          <p id="noResult">Sorry! There are no result for this recipe at the moment.</p>
           <div class="cardi card" id="cardi" style="width: 18rem;">
-            <div class="card-img-top"></div>
+                      
+            <!-- <div class="card-img-top"></div>
             <div class="card-body">
               <h5 class="card-title" id="cardTitle"></h5>
               <p class="card-text" id="cardText"></p>
             </div>
 
-            <p class="card-text" id="dietLabel"></p>
-
-           
-            <!-- <div class="card-body">
-              <button class="btn btn-warning">Detail View</button>
-            </div> -->
+            <p class="card-text" id="dietLabel"></p> -->
           </div>
 
          
@@ -153,7 +164,7 @@
         </nav>
 
 
-        <!--Modal section-->>
+        <!--Modal section-->
 
         <div id="modalcontainer">
           <div id="modal1">
